@@ -401,12 +401,32 @@ on small devices, paste the mobile query code up in the buttons section and styl
 there.
 */
 
+.appIcon {
+	margin-left:auto;
+	margin-right:auto;
+	filter: drop-shadow(3px 3px 10px #22222233);
+	-webkit-filter: drop-shadow(3px 3px 10px #22222233);
+	width:150px;
+	height:150px;
+	display:block;
+}
+
+.downloadButton {
+	text-align:center;
+}
 
 /* Larger than mobile */
 @media (min-width: 400px) {}
 
 /* Larger than phablet (also point when grid becomes active) */
-@media (min-width: 550px) {}
+@media (min-width: 550px) {
+	.downloadButton {
+		text-align: left;
+	}
+	.appIcon {
+		display:inline;
+	}
+}
 
 /* Larger than tablet */
 @media (min-width: 750px) {}
